@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+
+.computer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.computer-status {
+    margin-right: 10px;
+}
+
+.computer-actions {
+    display: flex;
+    gap: 10px;
+}
