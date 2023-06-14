@@ -1,13 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Estado de los Ordenadores</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Control de Workers Flamenco</title>
+  <style>
+    /* Estilos CSS */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .worker {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .worker h3 {
+      margin-top: 0;
+    }
+
+    .status {
+      font-weight: bold;
+    }
+
+    .controls button {
+      margin-right: 5px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Estado de los Ordenadores</h1>
-    <div id="computers-list"></div>
+  <h1>Control de Workers Flamenco</h1>
 
-    <script src="script.js"></script>
+  <div id="workers"></div>
+
+  <script>
+    // JavaScript
+    // URL de la API de Flamenco
+    const apiUrl = 'http://25.41.43.195:8080/api/v3/worker-mgt/workers';
+
+    // Obtener la lista de workers
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(workers => {
+        const workersContainer = document.getElementById('workers');
+
+        workers.forEach(worker => {
+          const workerDiv = document.createElement('div');
+          workerDiv.classList.add('worker');
+
+          const workerName = document.createElement('h3');
+          workerName.textContent = worker.name;
+
+          const workerStatus = document.createElement('p');
+          workerStatus.classList.add('status');
+          workerStatus.textContent = `Estado: ${worker.status}`;
+
+          const workerControls = document.createElement('div');
+          workerControls.classList.add('controls');
+
+          const shutdownButton = document.createElement('button');
+          shutdownButton.textContent = 'Apagar';
+          shutdownButton.addEventListener('click', () => changeStatus(worker.id, 'shutdown'));
+
+          const sleepButton = document.createElement('button');
+          sleepButton.textContent = 'Suspender';
+          sleepButton.addEventListener('click', () => changeStatus(worker.id, 'sleep'));
+
+          const wakeupButton = document.createElement('button');
+          wakeupButton.textContent = 'Despertar';
+          wakeupButton.addEventListener('click', () => changeStatus(worker.id, 'wakeup'));
+
+          workerControls.appendChild(shutdownButton);
+          workerControls.appendChild(sleepButton);
+          workerControls.appendChild(wakeupButton);
+
+          workerDiv.appendChild(workerName);
+          workerDiv.appendChild(workerStatus);
+          workerDiv.appendChild(workerControls);
+
+          workersContainer.appendChild(workerDiv);
+        });
+      });
+
+    // Cambiar el estado del worker
+    function changeStatus(workerId, newStatus) {
+      const changeStatusUrl = `http://25.41.43.195:8080/api/v3/worker-mgt/workers/${workerId}`;
+
+      fetch(changeStatusUrl, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ status: newStatus })
+      })
+      .then(response => response.json())
+      .then(updatedWorker => {
+        // Actualizar el estado del worker en la interfaz
+        const workerStatusElement = document.querySelector(`#workers .worker:nth-child(${workerId}) .status`);
+        workerStatusElement.textContent = `Estado: ${updatedWorker.status}`;
+      })
+      .catch(error => {
+        console.error('Error al cambiar el estado:', error);
+      });
+    }
+  </script>
 </body>
 </html>
