@@ -33,76 +33,19 @@
 
   <div id="workers"></div>
 
-  <script>
-    // JavaScript
-    // URL de la API de Flamenco
-    const apiUrl = 'http://25.41.43.195:8080/api/v3/worker-mgt/workers';
+  <script type="module">
+    import { apiClient } from 'http://25.41.43.195:8080/stores/api-query-count';
+    import { MetaApi } from "http://25.41.43.195:8080/manager-api";
 
-    // Obtener la lista de workers
-    fetch(apiUrl)
-      .then(response => response.json())
-      .then(workers => {
-        const workersContainer = document.getElementById('workers');
-
-        workers.forEach(worker => {
-          const workerDiv = document.createElement('div');
-          workerDiv.classList.add('worker');
-
-          const workerName = document.createElement('h3');
-          workerName.textContent = worker.name;
-
-          const workerStatus = document.createElement('p');
-          workerStatus.classList.add('status');
-          workerStatus.textContent = `Estado: ${worker.status}`;
-
-          const workerControls = document.createElement('div');
-          workerControls.classList.add('controls');
-
-          const shutdownButton = document.createElement('button');
-          shutdownButton.textContent = 'Apagar';
-          shutdownButton.addEventListener('click', () => changeStatus(worker.id, 'shutdown'));
-
-          const sleepButton = document.createElement('button');
-          sleepButton.textContent = 'Suspender';
-          sleepButton.addEventListener('click', () => changeStatus(worker.id, 'sleep'));
-
-          const wakeupButton = document.createElement('button');
-          wakeupButton.textContent = 'Despertar';
-          wakeupButton.addEventListener('click', () => changeStatus(worker.id, 'wakeup'));
-
-          workerControls.appendChild(shutdownButton);
-          workerControls.appendChild(sleepButton);
-          workerControls.appendChild(wakeupButton);
-
-          workerDiv.appendChild(workerName);
-          workerDiv.appendChild(workerStatus);
-          workerDiv.appendChild(workerControls);
-
-          workersContainer.appendChild(workerDiv);
-        });
-      });
-
-    // Cambiar el estado del worker
-    function changeStatus(workerId, newStatus) {
-      const changeStatusUrl = `http://25.41.43.195:8080/api/v3/worker-mgt/workers/${workerId}`;
-
-      fetch(changeStatusUrl, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ status: newStatus })
+    const metaAPI = new MetaApi(apiClient);
+    metaAPI.getVersion()
+      .then((version) => {
+        this.flamencoName = version.name;
+        this.flamencoVersion = version.version;
       })
-      .then(response => response.json())
-      .then(updatedWorker => {
-        // Actualizar el estado del worker en la interfaz
-        const workerStatusElement = document.querySelector(`#workers .worker:nth-child(${workerId}) .status`);
-        workerStatusElement.textContent = `Estado: ${updatedWorker.status}`;
-      })
-      .catch(error => {
-        console.error('Error al cambiar el estado:', error);
-      });
-    }
+  .catch((error) => {
+    console.log("Error getting the Flamenco version:", error);
+  })
   </script>
 </body>
 </html>
