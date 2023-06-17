@@ -30,12 +30,12 @@
 </head>
 <body>
   <h1>Control de Workers Flamenco</h1>
-
-  <div id="workers"></div>
-
-  <script type="module">
-    import { apiClient } from 'http://25.41.43.195:8080/stores/api-query-count';
-    import { MetaApi } from "http://25.41.43.195:8080/manager-api";
+</body>
+  <div id="workers">
+</div>
+<script type="module">
+    import { apiClient } from './manager-api/ApiClient.js';
+    import { MetaApi } from "./manager-api/index.js";
 
     const metaAPI = new MetaApi(apiClient);
     metaAPI.getVersion()
@@ -46,6 +46,5 @@
   .catch((error) => {
     console.log("Error getting the Flamenco version:", error);
   })
-  </script>
-</body>
+</script>
 </html>
