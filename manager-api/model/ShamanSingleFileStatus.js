@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import ShamanFileStatus from './ShamanFileStatus';
+import ApiClient from '../ApiClient.js';
+import ShamanFileStatus from './ShamanFileStatus.js';
 
 /**
  * The ShamanSingleFileStatus model module.

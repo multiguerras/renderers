@@ -12,17 +12,17 @@
  */
 
 
-import ApiClient from "../ApiClient";
-import BlenderPathCheckResult from '../model/BlenderPathCheckResult';
-import Error from '../model/Error';
-import FlamencoVersion from '../model/FlamencoVersion';
-import ManagerConfiguration from '../model/ManagerConfiguration';
-import ManagerVariable from '../model/ManagerVariable';
-import ManagerVariableAudience from '../model/ManagerVariableAudience';
-import PathCheckInput from '../model/PathCheckInput';
-import PathCheckResult from '../model/PathCheckResult';
-import SetupAssistantConfig from '../model/SetupAssistantConfig';
-import SharedStorageLocation from '../model/SharedStorageLocation';
+import ApiClient from "../ApiClient.js";
+import BlenderPathCheckResult from '../model/BlenderPathCheckResult.js';
+import Error from '../model/Error.js';
+import FlamencoVersion from '../model/FlamencoVersion.js';
+import ManagerConfiguration from '../model/ManagerConfiguration.js';
+import ManagerVariable from '../model/ManagerVariable.js';
+import ManagerVariableAudience from '../model/ManagerVariableAudience.js';
+import PathCheckInput from '../model/PathCheckInput.js';
+import PathCheckResult from '../model/PathCheckResult.js';
+import SetupAssistantConfig from '../model/SetupAssistantConfig.js';
+import SharedStorageLocation from '../model/SharedStorageLocation.js';
 
 /**
 * Meta service.

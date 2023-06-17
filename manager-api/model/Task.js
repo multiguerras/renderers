@@ -11,10 +11,10 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import Command from './Command';
-import TaskStatus from './TaskStatus';
-import TaskWorker from './TaskWorker';
+import ApiClient from '../ApiClient.js';
+import Command from './Command.js';
+import TaskStatus from './TaskStatus.js';
+import TaskWorker from './TaskWorker.js';
 
 /**
  * The Task model module.

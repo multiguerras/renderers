@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import JobStorageInfo from './JobStorageInfo';
+import ApiClient from '../ApiClient.js';
+import JobStorageInfo from './JobStorageInfo.js';
 
 /**
  * The SubmittedJob model module.

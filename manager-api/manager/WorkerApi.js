@@ -12,17 +12,17 @@
  */
 
 
-import ApiClient from "../ApiClient";
-import AssignedTask from '../model/AssignedTask';
-import Error from '../model/Error';
-import MayKeepRunning from '../model/MayKeepRunning';
-import RegisteredWorker from '../model/RegisteredWorker';
-import SecurityError from '../model/SecurityError';
-import TaskUpdate from '../model/TaskUpdate';
-import WorkerRegistration from '../model/WorkerRegistration';
-import WorkerSignOn from '../model/WorkerSignOn';
-import WorkerStateChange from '../model/WorkerStateChange';
-import WorkerStateChanged from '../model/WorkerStateChanged';
+import ApiClient from "../ApiClient.js";
+import AssignedTask from '../model/AssignedTask.js';
+import Error from '../model/Error.js';
+import MayKeepRunning from '../model/MayKeepRunning.js';
+import RegisteredWorker from '../model/RegisteredWorker.js';
+import SecurityError from '../model/SecurityError.js';
+import TaskUpdate from '../model/TaskUpdate.js';
+import WorkerRegistration from '../model/WorkerRegistration.js';
+import WorkerSignOn from '../model/WorkerSignOn.js';
+import WorkerStateChange from '../model/WorkerStateChange.js';
+import WorkerStateChanged from '../model/WorkerStateChanged.js';
 
 /**
 * Worker service.

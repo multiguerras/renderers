@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import WorkerStatus from './WorkerStatus';
+import ApiClient from '../ApiClient.js';
+import WorkerStatus from './WorkerStatus.js';
 
 /**
  * The WorkerStateChanged model module.

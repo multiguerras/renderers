@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import JobStatus from './JobStatus';
+import ApiClient from '../ApiClient.js';
+import JobStatus from './JobStatus.js';
 
 /**
  * The SocketIOJobUpdate model module.

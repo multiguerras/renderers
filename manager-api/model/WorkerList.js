@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import WorkerSummary from './WorkerSummary';
+import ApiClient from '../ApiClient.js';
+import WorkerSummary from './WorkerSummary.js';
 
 /**
  * The WorkerList model module.

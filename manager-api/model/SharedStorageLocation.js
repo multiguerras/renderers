@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import ManagerVariableAudience from './ManagerVariableAudience';
+import ApiClient from '../ApiClient.js';
+import ManagerVariableAudience from './ManagerVariableAudience.js';
 
 /**
  * The SharedStorageLocation model module.

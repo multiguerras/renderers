@@ -11,11 +11,11 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import JobAllOf from './JobAllOf';
-import JobStatus from './JobStatus';
-import JobStorageInfo from './JobStorageInfo';
-import SubmittedJob from './SubmittedJob';
+import ApiClient from '../ApiClient.js';
+import JobAllOf from './JobAllOf.js';
+import JobStatus from './JobStatus.js';
+import JobStorageInfo from './JobStorageInfo.js';
+import SubmittedJob from './SubmittedJob.js';
 
 /**
  * The Job model module.

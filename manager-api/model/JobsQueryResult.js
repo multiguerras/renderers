@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import Job from './Job';
+import ApiClient from '../ApiClient.js';
+import Job from './Job.js';
 
 /**
  * The JobsQueryResult model module.

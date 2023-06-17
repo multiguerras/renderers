@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import WorkerCluster from './WorkerCluster';
+import ApiClient from '../ApiClient.js';
+import WorkerCluster from './WorkerCluster.js';
 
 /**
  * The WorkerClusterList model module.

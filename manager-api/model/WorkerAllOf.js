@@ -11,9 +11,9 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import WorkerCluster from './WorkerCluster';
-import WorkerTask from './WorkerTask';
+import ApiClient from '../ApiClient.js';
+import WorkerCluster from './WorkerCluster.js';
+import WorkerTask from './WorkerTask.js';
 
 /**
  * The WorkerAllOf model module.

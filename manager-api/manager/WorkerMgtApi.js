@@ -12,15 +12,15 @@
  */
 
 
-import ApiClient from "../ApiClient";
-import Error from '../model/Error';
-import Worker from '../model/Worker';
-import WorkerCluster from '../model/WorkerCluster';
-import WorkerClusterChangeRequest from '../model/WorkerClusterChangeRequest';
-import WorkerClusterList from '../model/WorkerClusterList';
-import WorkerList from '../model/WorkerList';
-import WorkerSleepSchedule from '../model/WorkerSleepSchedule';
-import WorkerStatusChangeRequest from '../model/WorkerStatusChangeRequest';
+import ApiClient from "../ApiClient.js";
+import Error from '../model/Error.js';
+import Worker from '../model/Worker.js';
+import WorkerCluster from '../model/WorkerCluster.js';
+import WorkerClusterChangeRequest from '../model/WorkerClusterChangeRequest.js';
+import WorkerClusterList from '../model/WorkerClusterList.js';
+import WorkerList from '../model/WorkerList.js';
+import WorkerSleepSchedule from '../model/WorkerSleepSchedule.js';
+import WorkerStatusChangeRequest from '../model/WorkerStatusChangeRequest.js';
 
 /**
 * WorkerMgt service.

@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import TaskStatus from './TaskStatus';
+import ApiClient from '../ApiClient.js';
+import TaskStatus from './TaskStatus.js';
 
 /**
  * The TaskSummary model module.

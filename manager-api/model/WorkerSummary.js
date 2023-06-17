@@ -11,9 +11,9 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import WorkerStatus from './WorkerStatus';
-import WorkerStatusChangeRequest from './WorkerStatusChangeRequest';
+import ApiClient from '../ApiClient.js';
+import WorkerStatus from './WorkerStatus.js';
+import WorkerStatusChangeRequest from './WorkerStatusChangeRequest.js';
 
 /**
  * The WorkerSummary model module.

@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import TaskSummary from './TaskSummary';
+import ApiClient from '../ApiClient.js';
+import TaskSummary from './TaskSummary.js';
 
 /**
  * The JobTasksSummary model module.

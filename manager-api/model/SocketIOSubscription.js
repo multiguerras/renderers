@@ -11,9 +11,9 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import SocketIOSubscriptionOperation from './SocketIOSubscriptionOperation';
-import SocketIOSubscriptionType from './SocketIOSubscriptionType';
+import ApiClient from '../ApiClient.js';
+import SocketIOSubscriptionOperation from './SocketIOSubscriptionOperation.js';
+import SocketIOSubscriptionType from './SocketIOSubscriptionOperation.js';
 
 /**
  * The SocketIOSubscription model module.

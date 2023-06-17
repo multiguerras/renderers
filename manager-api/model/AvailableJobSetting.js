@@ -11,10 +11,10 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import AvailableJobSettingSubtype from './AvailableJobSettingSubtype';
-import AvailableJobSettingType from './AvailableJobSettingType';
-import AvailableJobSettingVisibility from './AvailableJobSettingVisibility';
+import ApiClient from '../ApiClient.js';
+import AvailableJobSettingSubtype from './AvailableJobSettingSubtype.js';
+import AvailableJobSettingType from './AvailableJobSettingType.js';
+import AvailableJobSettingVisibility from './AvailableJobSettingVisibility.js';
 
 /**
  * The AvailableJobSetting model module.

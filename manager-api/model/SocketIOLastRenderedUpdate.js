@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import JobLastRenderedImageInfo from './JobLastRenderedImageInfo';
+import ApiClient from '../ApiClient.js';
+import JobLastRenderedImageInfo from './JobLastRenderedImageInfo.js';
 
 /**
  * The SocketIOLastRenderedUpdate model module.

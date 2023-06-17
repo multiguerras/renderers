@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import AvailableJobType from './AvailableJobType';
+import ApiClient from '../ApiClient.js';
+import AvailableJobType from './AvailableJobType.js';
 
 /**
  * The AvailableJobTypes model module.

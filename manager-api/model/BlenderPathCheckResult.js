@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import BlenderPathSource from './BlenderPathSource';
+import ApiClient from '../ApiClient.js';
+import BlenderPathSource from './BlenderPathSource.js';
 
 /**
  * The BlenderPathCheckResult model module.

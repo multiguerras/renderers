@@ -11,10 +11,10 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import TaskStatus from './TaskStatus';
-import TaskSummary from './TaskSummary';
-import WorkerTaskAllOf from './WorkerTaskAllOf';
+import ApiClient from '../ApiClient.js';
+import TaskStatus from './TaskStatus.js';
+import TaskSummary from './TaskSummary.js';
+import WorkerTaskAllOf from './WorkerTaskAllOf.js';
 
 /**
  * The WorkerTask model module.

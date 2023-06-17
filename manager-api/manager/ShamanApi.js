@@ -12,13 +12,13 @@
  */
 
 
-import ApiClient from "../ApiClient";
-import Error from '../model/Error';
-import ShamanCheckout from '../model/ShamanCheckout';
-import ShamanCheckoutResult from '../model/ShamanCheckoutResult';
-import ShamanRequirementsRequest from '../model/ShamanRequirementsRequest';
-import ShamanRequirementsResponse from '../model/ShamanRequirementsResponse';
-import ShamanSingleFileStatus from '../model/ShamanSingleFileStatus';
+import ApiClient from "../ApiClient.js";
+import Error from '../model/Error.js';
+import ShamanCheckout from '../model/ShamanCheckout.js';
+import ShamanCheckoutResult from '../model/ShamanCheckoutResult.js';
+import ShamanRequirementsRequest from '../model/ShamanRequirementsRequest.js';
+import ShamanRequirementsResponse from '../model/ShamanRequirementsResponse.js';
+import ShamanSingleFileStatus from '../model/ShamanSingleFileStatus.js';
 
 /**
 * Shaman service.

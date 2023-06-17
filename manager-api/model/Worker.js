@@ -11,13 +11,13 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import WorkerAllOf from './WorkerAllOf';
-import WorkerCluster from './WorkerCluster';
-import WorkerStatus from './WorkerStatus';
-import WorkerStatusChangeRequest from './WorkerStatusChangeRequest';
-import WorkerSummary from './WorkerSummary';
-import WorkerTask from './WorkerTask';
+import ApiClient from '../ApiClient.js';
+import WorkerAllOf from './WorkerAllOf.js';
+import WorkerCluster from './WorkerCluster.js';
+import WorkerStatus from './WorkerStatus.js';
+import WorkerStatusChangeRequest from './WorkerStatusChangeRequest.js';
+import WorkerSummary from './WorkerSummary.js';
+import WorkerTask from './WorkerTask.js';
 
 /**
  * The Worker model module.

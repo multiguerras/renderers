@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import ShamanFileSpec from './ShamanFileSpec';
+import ApiClient from '../ApiClient.js';
+import ShamanFileSpec from './ShamanFileSpec.js';
 
 /**
  * The ShamanRequirementsRequest model module.

@@ -11,8 +11,8 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import BlenderPathCheckResult from './BlenderPathCheckResult';
+import ApiClient from '../ApiClient.js';
+import BlenderPathCheckResult from './BlenderPathCheckResult.js';
 
 /**
  * The SetupAssistantConfig model module.

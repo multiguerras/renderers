@@ -12,23 +12,23 @@
  */
 
 
-import ApiClient from "../ApiClient";
-import AvailableJobType from '../model/AvailableJobType';
-import AvailableJobTypes from '../model/AvailableJobTypes';
-import Error from '../model/Error';
-import Job from '../model/Job';
-import JobBlocklistEntry from '../model/JobBlocklistEntry';
-import JobDeletionInfo from '../model/JobDeletionInfo';
-import JobLastRenderedImageInfo from '../model/JobLastRenderedImageInfo';
-import JobPriorityChange from '../model/JobPriorityChange';
-import JobStatusChange from '../model/JobStatusChange';
-import JobTasksSummary from '../model/JobTasksSummary';
-import JobsQuery from '../model/JobsQuery';
-import JobsQueryResult from '../model/JobsQueryResult';
-import SubmittedJob from '../model/SubmittedJob';
-import Task from '../model/Task';
-import TaskLogInfo from '../model/TaskLogInfo';
-import TaskStatusChange from '../model/TaskStatusChange';
+import ApiClient from "../ApiClient.js";
+import AvailableJobType from '../model/AvailableJobType.js';
+import AvailableJobTypes from '../model/AvailableJobTypes.js';
+import Error from '../model/Error.js';
+import Job from '../model/Job.js';
+import JobBlocklistEntry from '../model/JobBlocklistEntry.js';
+import JobDeletionInfo from '../model/JobDeletionInfo.js';
+import JobLastRenderedImageInfo from '../model/JobLastRenderedImageInfo.js';
+import JobPriorityChange from '../model/JobPriorityChange.js';
+import JobStatusChange from '../model/JobStatusChange.js';
+import JobTasksSummary from '../model/JobTasksSummary.js';
+import JobsQuery from '../model/JobsQuery.js';
+import JobsQueryResult from '../model/JobsQueryResult.js';
+import SubmittedJob from '../model/SubmittedJob.js';
+import Task from '../model/Task.js';
+import TaskLogInfo from '../model/TaskLogInfo.js';
+import TaskStatusChange from '../model/TaskStatusChange.js';
 
 /**
 * Jobs service.

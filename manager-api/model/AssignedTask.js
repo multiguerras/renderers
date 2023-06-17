@@ -11,9 +11,9 @@
  *
  */
 
-import ApiClient from '../ApiClient';
-import Command from './Command';
-import TaskStatus from './TaskStatus';
+import ApiClient from '../ApiClient.js';
+import Command from './Command.js';
+import TaskStatus from './TaskStatus.js';
 
 /**
  * The AssignedTask model module.
