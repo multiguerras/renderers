@@ -12,8 +12,8 @@
  */
 
 
-import superagent from "superagent";
-import querystring from "querystring";
+import superagent from "../node_modules/superagent/";
+import querystring from "../node_modules/querystring/";
 
 /**
 * @module ApiClient
