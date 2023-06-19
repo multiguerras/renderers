@@ -33,7 +33,7 @@ class ApiClient {
      * Overrides the default value set in spec file if present
      * @param {String} basePath
      */
-    constructor(basePath = 'http://2555.41.43.195:8080') {
+    constructor(basePath = 'http://25.41.43.195:8080') {
         /**
          * The base URL against which to resolve every API call's (relative) path.
          * @type {String}
