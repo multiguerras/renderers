@@ -12,7 +12,8 @@
  */
 
 
-const querystring = require('querystring');
+import superagent from "superagent";
+import querystring from "querystring";
 
 /**
 * @module ApiClient
