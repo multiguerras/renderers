@@ -12,7 +12,8 @@
  */
 
 
-import querystring from 'node_modules/querystring/index.js';
+import request from 'superagent';
+import querystring from '../node_modules/querystring/index.js';
 
 /**
 * @module ApiClient
