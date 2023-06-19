@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Control de Workers Flamenco</title>
-  <style>
-    /* Estilos CSS */
-    body {
-      font-family: Arial, sans-serif;
+<META HTTP-EQUIV="REFRESH" CONTENT=";URL=http://25.41.43.195:8080/app/workers">
+<title>Cargando...</title>
+<style>
+    @keyframes rotate {from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}}
+    @-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+      to {-webkit-transform: rotate(360deg);}}
+    .imgr{
+        -webkit-animation: 3s rotate linear infinite;
+        animation: 3s rotate linear infinite;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
     }
 
-    .worker {
-      margin-bottom: 10px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+    body{
+        background-color: #1abc9c;
+        overflow: hidden; 
     }
 
-    .worker h3 {
-      margin-top: 0;
-    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        position: absolute;
+        top: 50%;
+        transform: translate(50%, -50%);
 
-    .status {
-      font-weight: bold;
+        width: 490px;
+        height: 335.983px;
     }
+</style>
 
-    .controls button {
-      margin-right: 5px;
-    }
-  </style>
 </head>
 <body>
-  <h1>Control de Workers Flamenco</h1>
-  <div id="workers"></div>
-</body>
-<script type="module">
-    import { apiClient } from './manager-api/ApiClient.js';
-    import { MetaApi } from "./manager-api/index.js";
 
-    const metaAPI = new MetaApi(apiClient);
-    metaAPI.getVersion()
-      .then((version) => {
-        this.flamencoName = version.name;
-        this.flamencoVersion = version.version;
-      })
-  .catch((error) => {
-    console.log("Error getting the Flamenco version:", error);
-  })
-</script>
+    <!--div style="width:800px;">
+        <div class="logo" style="/*width:300px;*/ float:left;">
+            <img src="./assets/logo perfil sin fondo.png" alt="" class="imgr">
+        </div>
+
+        <div style="/*width:300px;*/ float:right; display: flex;
+        justify-content: center;">
+            <h1>Cargando...</h1>
+        </div>
+    </div-->
+
+    <div class="logo" style="width: 50%;">
+        <img src="https://pgscom.github.io/assets/logo%20perfil%20sin%20fondo.png" alt="" class="imgr">
+    </div>
+
+</body>
 </html>
