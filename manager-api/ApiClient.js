@@ -12,7 +12,6 @@
  */
 
 
-const querystring = require('querystring');
 
 /**
 * @module ApiClient
