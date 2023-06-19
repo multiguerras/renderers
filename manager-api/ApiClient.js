@@ -12,8 +12,8 @@
  */
 
 
-import superagent from "../node_modules/superagent/";
-import querystring from "../node_modules/querystring/";
+const superagent = require('superagent');
+const querystring = require('querystring');
 
 /**
 * @module ApiClient
