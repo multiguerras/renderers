@@ -12,7 +12,7 @@
  */
 
 
-import querystring from '../node_modules/querystring/index.js';
+import querystring from 'querystring';
 
 /**
 * @module ApiClient
