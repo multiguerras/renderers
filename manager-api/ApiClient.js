@@ -85,7 +85,7 @@ class ApiClient {
          * if this.enableCookies is set to true.
          */
         if (typeof window === 'undefined') {
-          this.agent = new superagent.agent();
+            this.agent = superagent.agent();
         }
 
         /*
@@ -690,4 +690,6 @@ ApiClient.CollectionFormatEnum = {
 * @type {module:ApiClient}
 */
 ApiClient.instance = new ApiClient();
+module.exports = ApiClient;
 export default ApiClient;
+export const apiClient = ApiClient;
