@@ -1,49 +1,15 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Control de Workers Flamenco</title>
-  <style>
-    /* Estilos CSS */
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    .worker {
-      margin-bottom: 10px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    .worker h3 {
-      margin-top: 0;
-    }
-
-    .status {
-      font-weight: bold;
-    }
-
-    .controls button {
-      margin-right: 5px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Control de Workers Flamenco</h1>
-  <div id="workers"></div>
-</body>
-<script type="module">
-    import { apiClient } from './manager-api/ApiClient.js';
-    import { MetaApi } from "./manager-api/index.js";
-
-    const metaAPI = new MetaApi(apiClient);
-    metaAPI.getVersion()
-      .then((version) => {
-        this.flamencoName = version.name;
-        this.flamencoVersion = version.version;
-      })
-  .catch((error) => {
-    console.log("Error getting the Flamenco version:", error);
-  })
-</script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel='icon' href='/favicon.ico'>
+    <link rel="apple-touch-icon-precomposed" type='image/png' href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#8982c9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flamenco Manager</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
